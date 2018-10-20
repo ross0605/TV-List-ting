@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+	<title> {{title}} </title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: {{BackgroundColour}}">
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	<a class="navbar-brand" href="/home#">TV LIST-TING</a>
+	</div>
+	<ul class="nav navbar-nav">
+		<li><a href="/categories/a-z-list">A-Z LIST</a></li>
+		<li><a href="/categories/ratings">RATINGS</a></li>
+		<li><a href="/categories/genres">GENRES</a></li>
+	</ul>
+
+	</div>	
+</nav>
+<div style="padding-left: 25%; padding-right: 25%; padding-top: 20px;">
+<center><p style="font-size: 50px; line-height: 0.9;"><mark> {{Programme}} </mark></p>
+<p style="font-size: 35px;"><mark> {{ Channel }} </mark></p>
+<center><img src= {{ ImgSrc }} style="width:300px; height:300px;"></center><br>
+<font style="font-size:20px"><strong><mark>{{ Rating }} &nbsp; </mark></strong></font> 
+<a href={{Link}} style="font-size:20px"><mark>{{IMDBLink}} </mark></a><br><br>
+</center>
+<font><mark> {{ Section1 }}  </mark></font>
+<br><br>
+<center><button><a href={{ ImagePage }}>View Image</a></button></center><br>
+</div>
+
+</body>
+</html>
+
